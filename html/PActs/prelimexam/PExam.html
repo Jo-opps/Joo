@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unwind & Elevate (UE) Anniversary Sale - 50% Off</title>
+<style>
+    body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background: #ff0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    background: linear-gradient(135deg, #ff0000, #ff6666);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+    color: white;
+}
+
+.hero button {
+    background: white;
+    color: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background: #ffcccc;
+}
+
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.card p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.card button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 0 15px 15px;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: #cc0000;
+}
+
+footer {
+    background: #ff0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.page {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+.page:target {
+    display: block;
+}
+
+.page:target ~ #home {
+    display: none;
+}
+
+#description-bed .card img,
+#description-nightstand .card img,
+#description-lamp .card img,
+#description-wardrobe .card img,
+#description-dressing-table .card img {
+    width: 80%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Gallery Page Styles */
+#gallery-bed .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#gallery-bed .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#gallery-bed button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+#gallery-bed button:hover {
+    background: #cc0000;
+}
+
+#thankyou {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+#thankyou h1 {
+    font-size: 48px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+#thankyou p {
+    font-size: 20px;
+    color: #333;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div>Unwind & Elevate (UE) Anniversary Sale!</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#aboutus">About Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="page">
+        <div class="hero">
+            <h1>Welcome to Unwind & Elevate (UE)</h1>
+            <p>Our exclusive collection of high-quality furniture and accessories will transform your bedroom into a pleasant sanctuary. Enjoy up to <strong>50% off</strong> on certain goods during our anniversary sale. Don't miss out on these incredible discounts!</p>
+            <a href="#categories"><button>Shop Now</button></a>
+        </div>
+    </section>
+
+    <section id="categories" class="page">
+        <div class="container">
+            <h1>Categories</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258175_pe927363_s5.jpg?f=xl" alt="Bed">
+                    <h3>Beds</h3>
+                    <p>Starting at <del>10,990</del> <strong>5,495</strong></p>
+                    <a href="#gallery-bed"><button>View Details</button></a>
+                </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/brimnes-nightstand-white__1326566_pe944283_s5.jpg?f=xl" alt="Nightstand">
+                    <h3>Nightstands</h3>
+                    <p>Starting at <del>2,990</del> <strong>1,495</strong></p>
+                    <a href="#description-nightstand"><button>View Details</button></a>
+                </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/barlast-floor-lamp-black-white__0957677_pe805131_s5.jpg?f=xl" alt="Lamp">
+                    <h3>Lamps</h3>
+                    <p>Starting at <del>450</del> <strong>225</strong></p>
+                    <a href="#description-lamp"><button>View Details</button></a>
+                </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/brimnes-wardrobe-with-3-doors-white__0858636_pe386053_s5.jpg?f=xl" alt="Wardrobe">
+                    <h3>Wardrobes</h3>
+                    <p>Starting at <del>10,490</del> <strong>5,245</strong></p>
+                    <a href="#description-wardrobe"><button>View Details</button></a>
+                </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/alex-desk-white__1369153_pe958053_s5.jpg?f=xl" alt="Dressing Table">
+                    <h3>Dressing Tables</h3>
+                    <p>Starting at <del>7,490</del> <strong>3,745</strong></p>
+                    <a href="#description-dressing-table"><button>View Details</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-bed" class="page">
+        <div class="container">
+            <h1>Bed Gallery</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258194_pe927381_s5.jpg?f=s" alt="Bed Image 1">
+                </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258172_pe927371_s5.jpg?f=xl" alt="Bed Image 2">
+                </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258195_pe927382_s5.jpg?f=xl" alt="Bed Image 3">
+                  </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258196_pe927383_s5.jpg?f=s" alt="Bed Image 4">
+                  </div>
+                <div class="card">
+                    <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258175_pe927363_s5.jpg?f=xl" alt="Bed Image 5">
+                </div>
+            </div>
+            <a href="#description-bed"><button>View Product Details</button></a>
+        </div>
+    </section>
+
+    <section id="description-bed" class="page">
+        <div class="container">
+            <h1>Bed</h1>
+            <div class="card">
+                <img src="https://www.ikea.com/ph/en/images/products/ramnefjaell-upholstered-bed-frame-kilanda-light-beige__1258175_pe927363_s5.jpg?f=xl" alt="Luxury Bed">
+                <h3>Bed</h3>
+                <p><strong>Description:</strong> This bed is intended for maximum comfort and style.  Perfect for your ideal bedroom.</p>
+                <p><del>10,990</del> <strong>5,495</strong></p>
+                <a href="#thankyou"><button>Add to Shopping Bag</button></a>
+            </div>
+
+        </div>
+    </section>
+
+ 
+    <section id="thankyou" class="page">
+        <div class="container">
+            <h1>Thank You!</h1>
+            <p>Your item has been put to your shopping bag.  Thank you for your purchase!</p>
+        </div>
+    </section>
+  <section id="aboutus" class="page">
+        <div class="container">
+          
+            <h1>About Us</h1>
+          <p>Welcome to the <strong> Unwind & Elevate (UE)</strong> Bedroom Items!  We specialize in high-quality bedroom furniture and accessories that will transform your home into a comfortable hideaway.  Our anniversary deal gives up to <strong> 50% </strong> off certain goods.  Shop now!</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Unwind & Elevate (UE). All rights reserved.
+    </footer>
+</body>
+</html>

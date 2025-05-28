@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        body {
+            font-family: Trebuchet MS, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/Rizal_Monument_at_Rizal_Park.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 70%;
+            margin-top: 0px;
+            background: rgba(255, 255, 255, 0.79);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .text {
+            flex: 4;
+            padding-right: 30px;
+        }
+
+        .image {
+            flex: 2;
+            text-align: right;
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: rgba(255, 255, 255, 1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        th,
+        td {
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .heading {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .subheading {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-weight: normal;
+            color: black;
+        }
+
+        p {
+            font-family: Times New Roman, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Custodio, Joshua T.</td>
+            <th>Topic:</th>
+            <td>Introduction to HTML5</td>
+        </tr>
+        <tr>
+            <th>Activity No.</th>
+            <td>Hands-on Quiz 1</td>
+            <th>Date:</th>
+            <td>02/19/2025</td>
+        </tr>
+    </table>
+
+    <div class="container">
+        <div class="text">
+            <h1 class="heading">Rizal Park</h1>
+            <h2 class="subheading">Rizal National Park, PH</h2>
+            <p class="location">Rizal Park, also known as Luneta Park, is located in the heart of Manila, the capital
+                city of the Philippines. It covers approximately 58 hectares and is situated along Roxas Boulevard,
+                facing Manila Bay. The park is a popular recreational area and historical landmark that attracts both
+                locals and tourists.</p>
+            <p>Rizal Park holds immense historical significance, as it is the site of the execution of José Rizal, the
+                national hero of the Philippines. The Rizal Monument, a prominent feature of the park, houses his
+                remains and serves as a tribute to his role in the country's fight for independence.</p>
+            <p>I chose Rizal Park because it is the first place my family took me when I was a child. It holds a special
+                place in my heart because of the wonderful memories I made there with my family.</p>
+        </div>
+        <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Rizal_Park_Front_View.jpg" alt="Rizal Park">
+        </div>
+    </div>
+</body>
+
+</html>
